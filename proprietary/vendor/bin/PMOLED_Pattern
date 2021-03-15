@@ -1,0 +1,127 @@
+#!/vendor/bin/sh
+
+if [ -n "$1" ]; then
+	export CMD=$1
+else
+	echo "CMD not assigned !"
+	echo " 0 (Red), 1 (Green), 2 (Blue), 3(White)"
+	exit
+fi
+
+if [ "$CMD" -lt "0" -o "$CMD" -gt "9" ]; then
+	echo "CMD not assigned !"
+	echo "0 (Red), 1 (Green), 2 (Blue), 3(White)"
+	exit
+fi
+
+if [ "$CMD" -eq "0" ]; then
+	echo 0 > /sys/class/spi_master/spi0/spi0.0/Pattern
+
+	result1=`cat /sys/class/spi_master/spi0/spi0.0/Pattern`
+
+	if [ "$result1" -eq "0" ]; then
+		echo PASS
+	else
+		echo FAILED
+	fi
+
+elif [ "$CMD" -eq "1" ]; then
+	echo 1 > /sys/class/spi_master/spi0/spi0.0/Pattern
+
+	result1=`cat /sys/class/spi_master/spi0/spi0.0/Pattern`
+
+	if [ "$result1" -eq "1" ]; then
+		echo PASS
+	else
+		echo FAILED
+	fi
+
+elif [ "$CMD" -eq "2" ]; then
+	echo 2 > /sys/class/spi_master/spi0/spi0.0/Pattern
+
+	result1=`cat /sys/class/spi_master/spi0/spi0.0/Pattern`
+
+	if [ "$result1" -eq "2" ]; then
+		echo PASS
+	else
+		echo FAILED
+	fi
+
+elif [ "$CMD" -eq "3" ]; then
+	echo 3 > /sys/class/spi_master/spi0/spi0.0/Pattern
+
+	result1=`cat /sys/class/spi_master/spi0/spi0.0/Pattern`
+
+	if [ "$result1" -eq "3" ]; then
+		echo PASS
+	else
+		echo FAILED
+	fi
+
+elif [ "$CMD" -eq "4" ]; then
+	echo 4 > /sys/class/spi_master/spi0/spi0.0/Pattern
+
+	result1=`cat /sys/class/spi_master/spi0/spi0.0/Pattern`
+
+	if [ "$result1" -eq "4" ]; then
+		echo PASS
+	else
+		echo FAILED
+	fi
+
+elif [ "$CMD" -eq "5" ]; then
+	echo 5 > /sys/class/spi_master/spi0/spi0.0/Pattern
+
+	result1=`cat /sys/class/spi_master/spi0/spi0.0/Pattern`
+
+	if [ "$result1" -eq "5" ]; then
+		echo PASS
+	else
+		echo FAILED
+	fi
+
+elif [ "$CMD" -eq "6" ]; then
+	echo 6 > /sys/class/spi_master/spi0/spi0.0/Pattern
+
+	result1=`cat /sys/class/spi_master/spi0/spi0.0/Pattern`
+
+	if [ "$result1" -eq "6" ]; then
+		echo PASS
+	else
+		echo FAILED
+	fi
+
+elif [ "$CMD" -eq "7" ]; then
+	echo 7 > /sys/class/spi_master/spi0/spi0.0/Pattern
+
+	result1=`cat /sys/class/spi_master/spi0/spi0.0/Pattern`
+
+	if [ "$result1" -eq "7" ]; then
+		echo PASS
+	else
+		echo FAILED
+	fi
+
+elif [ "$CMD" -eq "8" ]; then
+	echo 8 > /sys/class/spi_master/spi0/spi0.0/Pattern
+
+	result1=`cat /sys/class/spi_master/spi0/spi0.0/Pattern`
+
+	if [ "$result1" -eq "8" ]; then
+		echo PASS
+	else
+		echo FAILED
+	fi
+
+elif [ "$CMD" -eq "9" ]; then
+	echo 9 > /sys/class/spi_master/spi0/spi0.0/Pattern
+
+	result1=`cat /sys/class/spi_master/spi0/spi0.0/Pattern`
+
+	if [ "$result1" -eq "9" ]; then
+		echo PASS
+	else
+		echo FAILED
+	fi
+fi
+

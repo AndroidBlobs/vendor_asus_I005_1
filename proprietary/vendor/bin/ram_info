@@ -1,0 +1,9 @@
+#!/system/bin/sh
+
+status=`getprop ro.boot.ddr.manufacturer_id`
+
+if [ "$status" -eq "ff" ]; then 
+	echo MICRON
+else 
+	echo Unknown
+fi	

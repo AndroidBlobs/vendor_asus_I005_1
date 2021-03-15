@@ -1,0 +1,11 @@
+service irisdbgd /vendor/bin/irisdbgd ${ro.vendor.irisdbgd.type:-1} ${ro.vendor.irisdbgd.dev:-/dev/i2c-1} ${ro.vendor.irisdbgd.addr:-0x26}
+    class late_start
+    user root
+    group root inet
+    disabled
+
+on property:debug.irisdbgd=1
+    start irisdbgd
+
+on property:debug.irisdbgd=0
+    stop irisdbgd

@@ -1,0 +1,18 @@
+ROG5 Iris6 inaprm V1.0  2020/11/11 
+Change all inparm to 603 lines
+Update line 200 to 0.55
+
+ROG5 Iris6 inaprm V1.1  2020/11/13
+Change inparm 20~23, inparm 30~33 color temperature to 8150 and color gamut is DCIP3
+
+ROG5 Iris6 inaprm V1.2  2021/1/5
+Adding CT range 70~72 
+ Inparm 4~6   2500-6500-10000
+ Others 2500-8150-10000
+
+ROG5 Iris6 inaprm V1.3  2021/1/8
+Change Iris6 inparm 20～23，30～33 to native without calibration for sdr2hdr,
+	change  line 126 from 0 to 1
+
+Close work around for 3/4,
+	change line 29 from 0.75 to 1.0

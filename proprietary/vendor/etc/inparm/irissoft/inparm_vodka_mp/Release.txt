@@ -1,0 +1,2 @@
+2020/12/18
+Update HDR maxcll line 120 setting inparm 7 1400, inparm 8 1400, inparm 9 4000

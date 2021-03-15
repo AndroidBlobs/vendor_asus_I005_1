@@ -1,0 +1,108 @@
+/media/jonanthan/SSD/Anakin/source/cs/APQ_BTR/adsp_proc/build/ms/bin/lahaina.adsp.prod/adsp.mbn is already OEM-signed. Rerunning OEM sign.
+Signed image is stored at /media/jonanthan/SSD/Anakin/source/cs/APQ_BTR/adsp_proc/build/ms/bin/lahaina.adsp.prod/lahaina/adsp/adsp.mbn
+OEM signed image with ECDSA
+Image /media/jonanthan/SSD/Anakin/source/cs/APQ_BTR/adsp_proc/build/ms/bin/lahaina.adsp.prod/lahaina/adsp/adsp.mbn signature is valid
+Image /media/jonanthan/SSD/Anakin/source/cs/APQ_BTR/adsp_proc/build/ms/bin/lahaina.adsp.prod/lahaina/adsp/adsp.mbn is not encrypted
+
+Base Properties: 
+| Integrity Check             | True  |
+| Signed                      | True  |
+| Encrypted                   | False |
+| Size of signature           | 104   |
+| Size of one cert            | 2048  |
+| Num of certs in cert chain  | 3     |
+| Number of root certs        | 1     |
+| Maximum number of root certs| None  |
+| Cert chain size             | 6144  |
+
+ELF Properties: 
+Header: 
+| Magic                      | ELF                           |
+| Class                      | ELF32                          |
+| Data                       | 2's complement, little endian  |
+| Version                    | 1 (Current)                    |
+| OS/ABI                     | No extensions or unspecified   |
+| ABI Version                | 0                              |
+| Type                       | EXEC (Executable file)         |
+| Machine                    | 164                            |
+| Version                    | 0x1                            |
+| Entry address              | 0x87300000                     |
+| Program headers offset     | 0x00000034                     |
+| Section headers offset     | 0x00000000                     |
+| Flags                      | 0x00000066                     |
+| ELF header size            | 52                             |
+| Program headers size       | 32                             |
+| Number of program headers  | 25                             |
+| Section headers size       | 40                             |
+| Number of section headers  | 0                              |
+| String table section index | 0                              |
+
+Program Headers: 
+| Num | Type | Offset | VirtAddr | PhysAddr | FileSize | MemSize | Flags |   Align   |
+|-----|------|--------|----------|----------|----------|---------|-------|-----------|
+|  1  | LOAD |0x003000|0xfe100000|0x87300000| 0x001cc8 | 0x002000|   RE  | 0x100000  |
+|  2  | LOAD |0x005000|0xfe102000|0x87302000| 0x24afc8 | 0x24b000|  RWE  | 0x1000    |
+|  3  | LOAD |0x250000|0xfe000000|0x8754d000| 0x00683c | 0x007000|   RE  | 0x1000    |
+|  4  | LOAD |0x257000|0xfe007000|0x87554000| 0x006240 | 0x007000|   RW  | 0x1000    |
+|  5  | LOAD |0x25e000|0xfe00e000|0x8755b000| 0x000444 | 0x001000|   RE  | 0x1000    |
+|  6  | LOAD |0x25f000|0xe059c000|0x8755c000| 0x055030 | 0x055030|   R   | 0x1000    |
+|  7  | LOAD |0x2b5000|0xf0100000|0x87600000| 0x000388 | 0x001000|   RE  | 0x1000    |
+|  8  | LOAD |0x2b6000|0xf0101000|0x87601000| 0x000a14 | 0x001000|   RW  | 0x1000    |
+|  9  | LOAD |0x2b7000|0xf0102000|0x87602000| 0x1ec05c | 0x1ed000|   RE  | 0x1000    |
+|  10 | LOAD |0x4a4000|0xf02ef000|0x877ef000| 0x02280c | 0x3c7000|   RW  | 0x1000    |
+|  11 | LOAD |0x4c7000|0xf06b6000|0x87bb6000| 0x000be8 | 0x001000|   RW  | 0x1000    |
+|  12 | LOAD |0x4c8000|0xf06b7000|0x87bb7000| 0x00b218 | 0x00c000|   R   | 0x1000    |
+|  13 | LOAD |0x4d4000|0xf0000000|0x87bc3000| 0x017dc0 | 0x018000|   RW  | 0x1000    |
+|  14 | LOAD |0x4ec000|0xf0018000|0x87bdb000| 0x00e0b0 | 0x00f000|   RE  | 0x1000    |
+|  15 | LOAD |0x4fb000|0x60000000|0x87c00000| 0x1b1344 | 0x1b2000|   RE  | 0x1000    |
+|  16 | LOAD |0x6ad000|0x601b2000|0x87db2000| 0x006dc9 | 0x0d3000|   RW  | 0x1000    |
+|  17 | LOAD |0x6b4000|0x60285000|0x87e85000| 0x000110 | 0x001000|   RW  | 0x1000    |
+|  18 | LOAD |0x6b5000|0x60286000|0x87e86000| 0x034204 | 0x035000|   R   | 0x1000    |
+|  19 | LOAD |0x6ea000|0xb0100000|0x87f00000| 0x6a5dbc | 0x6a6000|   RE  | 0x1000    |
+|  20 | LOAD |0xd90000|0xb07a6000|0x885a6000| 0x045040 | 0xa17000|   RW  | 0x1000    |
+|  21 | LOAD |0xdd6000|0xb11bd000|0x88fbd000| 0x000998 | 0x001000|   RW  | 0x1000    |
+|  22 | LOAD |0xdd7000|0xb11be000|0x88fbe000| 0x020490 | 0x021000|   R   | 0x1000    |
+|  23 | LOAD |0xdf8000|0xb0000000|0x88fdf000| 0x00a27c | 0x00b000|   RW  | 0x1000    |
+|  24 | LOAD |0xe03000|0xb000b000|0x88fea000| 0x04cf9c | 0x04d000|   RE  | 0x1000    |
+|  25 | LOAD |0xe50000|0xb0058000|0x89037000| 0x000000 | 0x3c9000|   RE  | 0x1000    |
+
+Hash Segment Properties: 
+| Header Size     | 168B  |
+| Hash Algorithm  | sha384|
+
+Header: 
+| cert_chain_ptr              | 0x89400388  |
+| cert_chain_size             | 0x00001800  |
+| cert_chain_size_qti         | 0x00000000  |
+| code_size                   | 0x00000510  |
+| image_id                    | 0x0000000c  |
+| image_size                  | 0x00001d78  |
+| metadata_major_version      | 0x00000000  |
+| metadata_major_version_qti  | 0x00000000  |
+| metadata_minor_version      | 0x00000000  |
+| metadata_minor_version_qti  | 0x00000000  |
+| metadata_size               | 0x00000078  |
+| metadata_size_qti           | 0x00000000  |
+| sig_ptr                     | 0x89400388  |
+| sig_size                    | 0x00000068  |
+| sig_size_qti                | 0x00000000  |
+| version                     | 0x00000006  |
+Metadata:
+| anti_rollback_version        | 0x00000000  |
+| app_id                       | 0x00000000  |
+| debug                        | 0x00000000  |
+| hw_id                        | 0x00000000  |
+| in_use_soc_hw_version        | 0x00000001  |
+| model_id                     | 0x00000028  |
+| mrc_index                    | 0x00000000  |
+| multi_serial_numbers         | 0x00000000  |
+| oem_id                       | 0x00000029  |
+| oem_id_independent           | 0x00000000  |
+| root_revoke_activate_enable  | 0x00000000  |
+| rot_en                       | 0x00000000  |
+| soc_vers                     | 0x0000600f  |
+| sw_id                        | 0x00000004  |
+| uie_key_switch_enable        | 0x00000000  |
+| use_serial_number_in_signing | 0x00000000  |
+
+

@@ -1,0 +1,11 @@
+on post-fs-data
+service netutild /vendor/bin/netutild
+    class main
+    socket netutild stream 0666 root system
+    disabled
+
+on property:vendor.asus.dual_wifi_on=1
+    start netutild
+
+on property:vendor.asus.dual_wifi_on=0
+    stop netutild

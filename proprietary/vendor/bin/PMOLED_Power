@@ -1,0 +1,39 @@
+#!/vendor/bin/sh
+
+if [ -n "$1" ]; then
+	export CMD=$1
+else
+	echo "CMD not assigned !"
+	echo " 0 (Off), 1 (On)"
+	exit
+fi
+
+if [ "$CMD" -lt "0" -o "$CMD" -gt "1" ]; then
+	echo "CMD not assigned !"
+	echo " 0 (Off), 1 (On)"
+	exit
+fi
+
+if [ "$CMD" -eq "0" ]; then
+	echo 0 > /sys/class/spi_master/spi0/spi0.0/Power
+
+	result1=`cat /sys/class/spi_master/spi0/spi0.0/Power`
+
+	if [ "$result1" -eq "0" ]; then
+		echo PASS
+	else
+		echo FAILED
+	fi
+
+elif [ "$CMD" -eq "1" ]; then
+	echo 1 > /sys/class/spi_master/spi0/spi0.0/Power
+
+	result1=`cat /sys/class/spi_master/spi0/spi0.0/Power`
+
+	if [ "$result1" -eq "1" ]; then
+		echo PASS
+	else
+		echo FAILED
+	fi
+fi
+

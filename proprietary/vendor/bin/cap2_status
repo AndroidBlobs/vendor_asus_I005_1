@@ -1,0 +1,12 @@
+ret=`cat /sys/devices/platform/soc/980000.i2c/i2c-0/0-0028/cap2_status`
+
+if [ "$ret" == "0" ]; then
+	echo 0
+
+elif [ "$ret" == "1" ]; then
+	echo 1
+
+else
+	echo "Failed"
+
+fi
